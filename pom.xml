@@ -24,16 +24,16 @@
     <modules>
         <module>order-management-service</module>
 		<module>tracking-number-service</module>
-		<module>common</module>
+		<module>common-lib</module>
 		<module>shipment-service</module>
 		<module>delivery-service</module>
 		<module>customer-service</module>
 		<module>payment-service</module>
-		<module>supporting-service</module>
+		<module>user-auth-service</module>
 		<module>notification-service</module>
 		<module>reporting-analytic-service</module>
 		<module>logging-service</module>
-		<module>configuration-service</module>
+		<module>api-gateway-service</module>
 		<module>service-discovery</module>
 		<module>integration-conmmunication-service</module>
 	</modules>

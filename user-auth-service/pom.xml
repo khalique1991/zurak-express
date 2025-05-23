@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.zurak</groupId>
-    <artifactId>supporting-service</artifactId>
+    <artifactId>user-auth-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -9,8 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.zurak</groupId>
-    <artifactId>configuration-service</artifactId>
+    <artifactId>common-lib</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

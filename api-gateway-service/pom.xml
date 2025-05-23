@@ -9,7 +9,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>common</artifactId>
+    <groupId>com.zurak</groupId>
+    <artifactId>api-gateway-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
