@@ -1,0 +1,52 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gcp:
+      project-id: zurak-express
+      spanner:
+        instance-id: user-auth
+        database: user_auth_db
+    consul:
+      discovery:
+        service-id: user-auth-service
+        instance-id: user-auth-service-1
+      enabled: false
+jte:
+  developmentMode: true
+debug: true
+gg:
+  jte:
+    developmentMode: true
+management:
+  health:
+    spanner:
+      enabled: false
+        # Or usePrecompiledTemplates: true
+          # autocommit: true # Default is true
+          # emulator:
+          #   enabled: false
+          # credentials:
+          #   location: file:/path/to/your/credentials.json # Optional, if not using default GCP setup
+
+#    datasource:
+#    url: jdbc:postgresql://localhost:5432/user_auth_db # Replace with your database URL
+#    username: your_username                      # Replace with your database username
+#    password: your_password                      # Replace with your database password
+#    jpa:
+#    hibernate:
+#      ddl-auto: update # Use 'create' initially for development, then 'update' or 'validate' for production
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    show-sql: true      # Set to 'true' during development to see generated SQL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTc0ODA5NTc1NywiaWF0IjoxNzQ4MDk1NzU3fQ.3-MHFD2nhiKu41Hwp2SBsffFwbeMI3GxbF7erpUeWUs # Replace with a strong, secret key
+  expiration: 86400000 # Token expiration time in milliseconds (e.g., 24 hours)
