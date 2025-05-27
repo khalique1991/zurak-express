@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.parent.version>0.0.1-SNAPSHOT</project.parent.version>
     </properties>
-    <dependencies>
+    <!--<dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
@@ -69,5 +69,5 @@
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>

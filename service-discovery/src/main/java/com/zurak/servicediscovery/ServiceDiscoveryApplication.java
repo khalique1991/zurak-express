@@ -2,12 +2,10 @@ package com.zurak.servicediscovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.cloud.function.context.config.ContextFunctionCatalogAutoConfiguration;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-@SpringBootApplication(exclude = {ContextFunctionCatalogAutoConfiguration.class})
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication // Keep only this for core Spring Boot auto-config
+@EnableEurekaServer    // Keep this to enable Eureka Server functionality
 public class ServiceDiscoveryApplication {
 
     public static void main(String[] args) {
